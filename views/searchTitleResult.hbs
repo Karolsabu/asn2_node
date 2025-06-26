@@ -1,0 +1,11 @@
+<h2>Search Results for "{{searchTerm}}"</h2>
+{{#if results.length}}
+  <ul>
+    {{#each results}}
+      <li>{{Title}} ({{Year}}) - {{Director}}</li>
+    {{/each}}
+  </ul>
+{{else}}
+  <p>No results found.</p>
+{{/if}}
+<a href="/data/search/title">Search again</a>

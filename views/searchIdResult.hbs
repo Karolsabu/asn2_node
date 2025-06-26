@@ -1,0 +1,8 @@
+<h2>Search Result</h2>
+{{#if notFound}}
+  <p>No movie found with ID: {{id}}</p>
+{{else}}
+  <p><strong>Title:</strong> {{movie.Title}}</p>
+  <p><strong>Year:</strong> {{movie.Year}}</p>
+{{/if}}
+<a href="/data/search/id">Search again</a>

@@ -1,0 +1,42 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+  color: #333;
+
+}
+
+header {
+  background: #4c569b;;
+  color: white;
+  padding:2px;
+  text-align: center;
+
+    
+}
+
+#content {
+  padding: 14px;
+  min-height: 70vh;
+  background: white;
+text-align: center; 
+margin: 0 auto;
+/* width:fit-content; */
+ 
+}
+ul, ol {
+  padding-left: 20px;   /* space for bullets */
+  text-align: left;     /* align text to the left */
+  list-style-position: inside; /* keep bullet close to text */
+}
+
+li {
+  margin-bottom: 8px;
+}
+footer {
+  background: #4c569b;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+
+}

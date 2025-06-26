@@ -1,0 +1,53 @@
+<h2>Movies with Metascore</h2>
+<table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th>Movie ID</th>
+      <th>Title</th>
+      <th>Year</th>
+      <th>Rated</th>
+      <th>Released</th>
+      <th>Runtime</th>
+      <th>Genre</th>
+      <th>Director</th>
+      <th>Writer</th>
+      <th>Actors</th>
+      <th>Plot</th>
+      <th>Language</th>
+      <th>Country</th>
+      <th>Awards</th>
+      <th>Poster</th>
+      <th>Metascore</th>
+      <th>IMDB Rating</th>
+      <th>IMDB Votes</th>
+      <th>IMDB ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each movies}}
+      {{#hasMetascore Metascore}}
+        <tr>
+          <td>{{Movie_ID}}</td>
+          <td>{{Title}}</td>
+          <td>{{Year}}</td>
+          <td>{{Rated}}</td>
+          <td>{{Released}}</td>
+          <td>{{Runtime}}</td>
+          <td>{{Genre}}</td>
+          <td>{{Director}}</td>
+          <td>{{Writer}}</td>
+          <td>{{Actors}}</td>
+          <td>{{Plot}}</td>
+          <td>{{Language}}</td>
+          <td>{{Country}}</td>
+          <td>{{Awards}}</td>
+          <td><img src="{{Poster}}" alt="Poster" style="height:100px;"></td>
+          <td>{{Metascore}}</td>
+          <td>{{imdbRating}}</td>
+          <td>{{imdbVotes}}</td>
+          <td>{{imdbID}}</td>
+        </tr>
+      {{/hasMetascore}}
+    {{/each}}
+  </tbody>
+</table>
